@@ -24,7 +24,7 @@ RSpec.describe Project, type: :model do
    # 二人のユーザーが同じ名前を使うことは許可すること
    it "allows two users to share a project name" do
      user = User.create(
-              first_name: "Joe",
+       first_name: "Joe",
        last_name:  "Tester",
        email:      "joetester@example.com",
        password:   "dottle-nouveau-pavilion-tights-furze",
