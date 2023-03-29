@@ -6,4 +6,8 @@ class CatsController < ApplicationController
   def search 
   
   end 
+  
+   def index
+  
+  end 
 end
