@@ -82,6 +82,10 @@ GEM
     ffi (1.15.5)
     globalid (1.1.0)
       activesupport (>= 5.0)
+    hirb (0.7.3)
+    hirb-unicode (0.0.5)
+      hirb (~> 0.5)
+      unicode-display_width (~> 0.1.1)
     i18n (1.12.0)
       concurrent-ruby (~> 1.0)
     jbuilder (2.9.1)
@@ -125,6 +129,8 @@ GEM
     pry-byebug (3.10.1)
       byebug (~> 11.0)
       pry (>= 0.13, < 0.15)
+    pry-rails (0.3.9)
+      pry (>= 0.10.4)
     public_suffix (5.0.1)
     puma (4.3.6)
       nio4r (~> 2.0)
@@ -219,6 +225,7 @@ GEM
     turbolinks-source (5.2.0)
     tzinfo (1.2.11)
       thread_safe (~> 0.1)
+    unicode-display_width (0.1.1)
     uri (0.12.0)
     web-console (4.0.1)
       actionview (>= 6.0.0)
@@ -247,11 +254,14 @@ DEPENDENCIES
   bootsnap (= 1.10.3)
   byebug (= 11.0.1)
   capybara (= 3.28.0)
+  hirb
+  hirb-unicode
   jbuilder (= 2.9.1)
   launchy
   listen (= 3.1.5)
   net-http
   pry-byebug
+  pry-rails
   puma (= 4.3.6)
   rails (= 6.0.4)
   rspec-rails

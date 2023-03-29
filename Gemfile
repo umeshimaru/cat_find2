@@ -16,6 +16,7 @@ group :development, :test do
   gem 'byebug',  '11.0.1', platforms: [:mri, :mingw, :x64_mingw]
   gem 'rspec-rails'
   gem "net-http"
+  gem 'pry-rails' 
 
  
 end
@@ -26,6 +27,8 @@ group :development do
   gem 'spring',                '2.1.0'
   gem 'spring-watcher-listen', '2.0.1'
   gem 'pry-byebug'
+  gem 'hirb'
+  gem 'hirb-unicode'
 end
 
 group :test do
