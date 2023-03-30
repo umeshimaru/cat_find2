@@ -8,6 +8,8 @@ class CatsController < ApplicationController
   end 
   
    def index
-  
+   @cats = Cat.where(color: params[:color])
+   
+   
   end 
 end
