@@ -17,6 +17,7 @@ group :development, :test do
   gem 'rspec-rails'
   gem "net-http"
   gem 'pry-rails' 
+  gem 'carrierwave'
 
  
 end
