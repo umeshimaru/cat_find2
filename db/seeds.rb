@@ -8,15 +8,15 @@
 
 a = [
     ['ミヌエット', 'クリーム', '静岡県 ','男の子 ', 
-      480445 , image: File.open('cat.jpg')],
+      480445 , image: File.open('./app/public/images/cat.jpg')],
     ['マンチカン', 'ホワイト', '三重県 ','男の子 ', 
-      938050  , image: File.open('cat2.jpg')],
+      938050  , image: File.open('./app/public/images/cat2.jpg')],
     ['マンチカン', 'ホワイト', '東京都 ','女の子 ', 
-      505745  , image: File.open('cat3.jpg')],
+      505745  , image: File.open('./app/public/images/cat3.jpg')],
     ['ラグドール', 'ホワイト', '静岡県 ','女の子 ', 
-      418000  , image: File.open('cat4.jpg')],
+      418000  , image: File.open('./app/public/images/cat4.jpg')],
     ['ソマリ', 'グレー', '神奈川 ','女の子 ', 
-      416870 , image: File.open('cat5.jpg')],
+      416870 , image: File.open('./app/public/images/cat5.jpg')],
       
     ]
 
