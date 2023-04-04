@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
+  get 'book/new'
   get '/home', to: 'cats#home'
   get '/search', to: 'cats#search'
   get '/index', to: 'cats#index'
