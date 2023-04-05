@@ -1,4 +1,4 @@
-require_relative './shain.rb'
+require_relative 'shain'
 
 class Chief < Shain
 
@@ -6,7 +6,11 @@ class Chief < Shain
    puts "チーフは素早く起立しました"
  end 
  
- def salary(salary)   
-   salary * 2 + 1
+ def kihon
+ @kihonkyu * 2
+ end 
+ 
+ def teate
+ 1
  end 
 end 

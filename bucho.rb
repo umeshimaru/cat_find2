@@ -8,8 +8,13 @@ class Manager < Shain
    puts "部長はめんどくさそうに起立しました"
  end 
  
-  def salary(salary)   
-   salary * 3 
+  def kihon  
+   @kihonkyu * 4 
    end 
+   
+  def teate
+   2
+  end 
 end 
+
 
