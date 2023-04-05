@@ -1,4 +1,4 @@
-require_relative './shain.rb'
+require_relative 'shain.rb'
 
 class Tanto < Shain
 
@@ -6,7 +6,5 @@ class Tanto < Shain
    puts "担当は慌てて起立しました"
  end 
  
- def salary(salary)   
-   salary
- end 
+ 
 end 
