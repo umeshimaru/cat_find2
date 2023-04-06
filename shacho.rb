@@ -8,19 +8,10 @@ require_relative 'shain_factory'
 
 
 shain_factory = Shain_factory.new 
-
-shain = shain_factory.new("Tanto",100)
+["Tanto","Chief","Manager","Ceo"].each do |position|
+shain = shain_factory.create(position,100)
 shain.standup
 puts "私の給料は#{shain.calculate_salary}円です"
+end 
 
-shain = shain_factory.new("Chief",100)
-shain.standup
-puts"私の給料は#{shain.calculate_salary}円です"
 
-shain = shain_factory.new("Bucho",100)
-shain.standup
-puts"私の給料は#{shain.calculate_salary}円です"
-
-shain = shain_factory.new("Ceo",100)
- shain.standup
-puts"私の給料は#{shain.calculate_salary}円です"

@@ -1,4 +1,4 @@
-require_relative './shain.rb'
+require_relative 'shain'
 
 
 class Manager < Shain
