@@ -9,6 +9,7 @@ class CatsController < ApplicationController
   
    def index
    @cats = Cat.where(color: params[:color])
+
    
    
   end 
@@ -16,6 +17,11 @@ class CatsController < ApplicationController
   private
   
   def user_params
-  params.require(:cat).permit( :img) # 変更後
+  params.require(:cat).permit( :img) 
   end
+  
+  
+
+
+
 end
