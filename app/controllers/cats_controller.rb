@@ -9,7 +9,7 @@ class CatsController < ApplicationController
   
    def index
    @cats = Cat.where(color: params[:color])
-
+    binding.pry 
    
    
   end 

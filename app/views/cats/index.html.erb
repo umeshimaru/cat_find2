@@ -1,9 +1,8 @@
 
 <% @cats.each do |cat|%>
 <%= cat.name %>
-<%= image_tag cat.img %>
-
-
+<%= image_tag "#{cat.img}" %>
+<%= link_to "詳細", cat %>
 
 <% end %>
 
