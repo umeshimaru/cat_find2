@@ -15,6 +15,11 @@ RSpec.describe "Cats", type: :system do
       click_link '猫を探す'
       expect(page).to have_content '検索条件'
     end
+    
+    describe "#search" do 
+      it "select option and show pic and name" do 
+      visit
+    
   end 
   
   
