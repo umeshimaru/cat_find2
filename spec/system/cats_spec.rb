@@ -7,7 +7,7 @@ RSpec.describe "Cats", type: :system do
       get home_url
       expect(response).to be_successful
     end
-  end 
+  
   
   describe "#search" do 
     it "responds to search" do 
@@ -15,14 +15,15 @@ RSpec.describe "Cats", type: :system do
       click_link '猫を探す'
       expect(page).to have_content '検索条件'
     end
+
     
     describe "#search" do 
-      it "select option and show pic and name" do 
-      visit
+      it "select options" do 
+      visit search_path
+      select 'ホワイト', from: '色'
+      click_link '検索'
+      expect(page).to have_link , href: edit_contact_path(contact)
     
   end 
-  
-  
-  
 
 end
