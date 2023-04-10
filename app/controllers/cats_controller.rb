@@ -7,12 +7,18 @@ class CatsController < ApplicationController
   
   end 
   
+  #結果表示
    def index
    @cats = Cat.where(color: params[:color])
-    binding.pry 
+
    
+   end 
    
-  end 
+   def show
+    @cats = Cat.find(params[:id])
+    
+   end 
+  
   
   private
   
