@@ -7,13 +7,13 @@ class CatsController < ApplicationController
   
   end 
   
+  
+
   #結果表示
    def index
-   @cats = Cat.where(color: params[:color])
-
-   
+   @cats = Cat.where(color: params[:color],name: params[:name])
    end 
-   
+  
    def show
     @cats = Cat.find(params[:id])
     
