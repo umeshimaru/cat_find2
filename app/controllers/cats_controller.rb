@@ -9,9 +9,11 @@ class CatsController < ApplicationController
   
   
 
-  #結果表示
+  #結果表示 
+  #選択肢の色と名前に該当する猫を検索する。
    def index
-   @cats = Cat.where(color: params[:color],name: params[:name])
+   @cats = Cat.find_your_preference(params[:color],params[:name])
+  
    end 
   
    def show

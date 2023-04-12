@@ -1,3 +1,8 @@
 class Cat < ApplicationRecord
   mount_uploader :img, ImageUploader
-end
+
+
+ scope :find_your_preference , -> (color,name){ where(color: color,name: name) }
+  
+end 
+

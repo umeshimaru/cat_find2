@@ -1,8 +1,8 @@
 
 <% @cats.each do |cat|%>
-
-<%=link_to image_tag("#{cat.img}"), show_path(cat.id)%>
 <%=link_to cat.name, show_path(cat.id)%>
+<%=link_to image_tag("#{cat.img}"), show_path(cat.id)%>
+
 
 
 <% end %>
