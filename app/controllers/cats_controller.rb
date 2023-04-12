@@ -13,7 +13,10 @@ class CatsController < ApplicationController
   #選択肢の色と名前に該当する猫を検索する。
    def index
    @cats = Cat.find_your_preference(params[:color],params[:name])
-  
+    if @cats.empty?
+    flash.now[:notice] = "該当する猫はいませんでした"
+    render "search"
+    end 
    end 
   
    def show

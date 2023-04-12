@@ -1,3 +1,4 @@
+<%= flash[:notice] %>
 
 <% @cats.each do |cat|%>
 <%=link_to cat.name, show_path(cat.id)%>
