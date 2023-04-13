@@ -14,8 +14,8 @@ class CatsController < ApplicationController
    def index
    @cats = Cat.find_your_preference(params[:color],params[:name])
     if @cats.empty?
-    flash.now[:notice] = "該当する猫はいませんでした"
-    render "search"
+    flash[:notice] = "該当する猫はいませんでした"
+    redirect_to action: "search"
     end 
    end 
   
