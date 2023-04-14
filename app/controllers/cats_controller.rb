@@ -2,6 +2,11 @@ class CatsController < ApplicationController
   def home
   end
   
+  def about
+    
+  end 
+  
+  
    #条件検索
   def search 
   
