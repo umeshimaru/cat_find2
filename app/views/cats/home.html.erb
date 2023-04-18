@@ -1,3 +1,12 @@
-<%= link_to "猫を探す", controller: "cats", action: "search" =%>
- 
- 
+  <section>
+    <div class="center-item">
+      <%= button_to "猫を探す", { controller: "cats", action: "search" }, { method: :get,class: "btn btn-primary" }  %>
+    </div>
+　</section>
+   
+   
+
+   <div class="background">
+    <%= image_tag "background.png" %>
+   </div>
+
