@@ -2,11 +2,17 @@
  <%= message %>
  <% end %>
 <main>
-   <div class ="container">
-      <h1>検索条件</h1>
-      <%= form_with url: "/index", method: :get,  local: true do |f| %>
+  <div class ="container">
+   <h1>検索条件</h1>
+   <%= form_with url: "/index", method: :get,  local: true do |f| %>
+      <div class="form-group">
+      <div class = "lavel_side">
       <%= f.label :name,"名前",{class: 'field'} %>
+    </div>
+    <div class = "form_side">
       <%= f.select :name, ['マンチカン', 'ソマリ','ミヌエット','ラグドール'], { prompt: '選択してください' } %>
+    </div>
+    </div>
       <%= f.label :color,"色" ,{class: 'field'}%>
       <%= f.select :color, ['ホワイト', 'クリーム','グレー'], { prompt: '選択してください' } %>
       <%= f.submit "検索" %>

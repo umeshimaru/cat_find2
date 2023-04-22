@@ -9,6 +9,9 @@ main {
             .container,.field {
                               display: block;
                               }
+            .container,.form-group {
+                                          display: inline;  
+            }
                     
 
       }
