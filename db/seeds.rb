@@ -17,6 +17,8 @@ a = [
       418000  , File.open('./app/assets/images/cat4.jpg')],
     ['ソマリ', 'グレー', '神奈川 ','女の子 ', 
       416870 ,  File.open('./app/assets/images/cat5.jpg')],
+    ['マンチカン', 'ホワイト', '福岡 ','女の子 ', 
+      874000 ,  File.open('./app/assets/images/cat6.jpg')],
       
     ]
 
