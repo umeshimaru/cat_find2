@@ -3,15 +3,23 @@ main {
       
         .container {
                     text-align: center;
+                    display: block;
                     
+                    h1 {
+                        margin-bottom: 70px;
+                        }
+                    label {
+                           width: 100px;
+                           margin-bottom: 50px;
+                          }
+                    .laval_side {
+                                 display: inline; 
+                                
+                                }
                     }
-                    // フォームを縦並び
-            .container,.field {
-                              display: block;
-                              }
-            .container,.form-group {
-                                          display: inline;  
-            }
+                   
+            
+            
                     
 
       }
