@@ -1,13 +1,17 @@
 <%= flash.now[:notice] %>
-<div class="card-group">
+<div class="card-deck">
+<div class="row">
 <% @cats.each do |cat|%>
-  <div class = "card">
-    <%=link_to image_tag("#{cat.img}"), show_path(cat.id),{class: "card-img-top "}%>
+  <div class="col-sm-4">
+  <div class = "card h-100">
+    <%=link_to image_tag("#{cat.img}"), show_path(cat.id),{class: "card-img-top img-fluid"}%>
     <div class = "card-body">
       <h1><%=link_to cat.name, show_path(cat.id),{class: "card-title"}%></h2>
       <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
       <%=link_to "詳細へ", show_path(cat.id)%>
     </div>
   </div>
+  </div>
 <% end %>
+</div>
 </div>
