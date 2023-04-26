@@ -1,10 +1,11 @@
- <% flash.each do |message_type, message |%>
- <div class="alert alert-<%= message_type %>">
- <%= message %>
- </div>
- <% end %>
+
 <main>
   <div class ="container">
+      <% flash.each do |message_type, message |%>
+        <div class="alert alert-<%= message_type %>">
+           <%= message %>
+        </div>
+      <% end %>
    <h1>検索条件</h1>
    <%= form_with url: "/index", method: :get,  local: true do |f| %>
      <div class="form-group">
