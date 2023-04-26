@@ -26,6 +26,7 @@ require 'rails_helper'
   end 
     
     describe "#search" do 
+       # 検索失敗時フラッシュdangerが出力できているかどうか
        it "should show failure flash" do 
          visit search_path
          select 'マンチカン', from: '名前'
