@@ -1,9 +1,32 @@
-.box {
-	    text-align: center ;
+.big_box {
+	     //猫の画像と詳細を横並びにする
 	    .small_box {
 	                display: inline-block;
+	                .top {
+	                      position: absolute;
 	                }
+	                 //猫の画像とulの大きさを同じにする
 	                ul {
 	                    list-style: none; 
+	                    width: 640px;
+	                    height: 480px;
+	                    
+	                    // 猫の名前太字にする
+	                .adjust:first-child {
+	                                     font-weight: bold;
+	                                     font-size: 20px;
+	                    }
+	                    // 猫の詳細の行間開ける
+	                    .adjust {
+	                             border-bottom: solid;
+	                             margin-bottom: 70px;
+	                             
+	                    }
 	                   }
+	                }
+	                // 2つのsmall_boxの高さを揃える
+	                .size {
+	                       height: 480px;
+	                }
+	                 
      }

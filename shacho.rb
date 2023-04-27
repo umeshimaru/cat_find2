@@ -15,9 +15,12 @@ require_relative 'shain2'
 # puts "私の給料は#{shain.calculate_salary}円です"
 # end 
 
-shain = Shain.new
-puts shain.work
-shain.gyoumu = TantoGyoumu.new
-puts shain.work
-shain.gyoumu = ChiefGyoumu.new
-puts shain.work
+# shain = Shain.new
+# puts shain.work
+# shain.gyoumu = TantoGyoumu.new
+# puts shain.work
+# shain.gyoumu = ChiefGyoumu.new
+# puts shain.work
+
+shain = Tanto.new
+puts "私の給料は#{shain.calculate_salary(100)}円です"

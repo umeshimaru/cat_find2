@@ -1,16 +1,15 @@
-<div class = box>
-<div class = small_box>
-<h1>詳細</h1>
-<%= image_tag"#{@cats.img}"  %>
-</div>
-<div class = small_box >
-  <ul>
-    <li><%= @cats.name %></li>
-    <li>出身<%= @cats.from %></li>
-    <li>性別<%= @cats.sex %></li>
-    <li>価格<%= "#{@cats.price.to_s}円"%>税込</li>
-  </ul>
-</div>
+<div class = "big_box">
+    <div class = "small_box top">
+          <%= image_tag"#{@cats.img}"  %>
+    </div>
+    <div class = "small_box size" >
+        <ul>
+          <li class = "adjust"><%= @cats.name %></li>
+          <li class = "adjust">出身<%= @cats.from %></li>
+          <li class = "adjust">性別<%= @cats.sex %></li>
+          <li class = "adjust">価格<%= "#{@cats.price.to_s}円"%>(税込)</li>
+        </ul>
+    </div>
 </div>
 
 

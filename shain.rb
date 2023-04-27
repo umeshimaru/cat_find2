@@ -9,7 +9,7 @@ include Salary
  end 
  
  def standup  
-   puts "社員は起立する"
+   puts "社員はとりあえず起立する"
  end 
  
   
