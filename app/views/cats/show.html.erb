@@ -8,7 +8,7 @@
           <li class = "adjust">出身:&emsp;<%= @cats.from %></li>
           <li class = "adjust">性別:&emsp;<%= @cats.sex %></li>
           <li class = "adjust">価格:&emsp;<%= "#{@cats.price.to_s}円"%>(税込)</li>
-          <li class = "adjust"><%= button_to "戻る",  { controller: "cats", action: "index" },{ method: :get,class: "btn btn-primary w-25" }  %></li>
+          <li class = "adjust"><%= link_to "戻る", :back,{ method: :get,class: "btn btn-primary w-25" }  %></li>
         </ul>
     </div>
  
