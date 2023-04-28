@@ -8,3 +8,6 @@ class Tanto < Shain
  
  
 end 
+
+
+puts "まさりき"

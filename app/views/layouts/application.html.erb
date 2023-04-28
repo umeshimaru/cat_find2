@@ -13,7 +13,9 @@
     <header>
       <%= render 'layouts/header'%> 
     </header>
-  
+  <div class="background">
     <%= yield %>
+    <%= image_tag "background.jpg" %>
+  </div>
   </body>
 </html>
