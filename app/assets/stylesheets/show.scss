@@ -10,6 +10,7 @@
 	     //猫の画像と詳細を横並びにする
 	    .small_box {
 	                margin-top: 100px;
+	                margin-left: 20px;
 	                
 	                
 	                 //猫の画像とulの大きさを同じにする
@@ -21,13 +22,14 @@
 	                    // 猫の名前太字にする
 	                .adjust:first-child {
 	                                     font-weight: bold;
-	                                     font-size: 20px;
+	                                     font-size: 40px;
 	                    }
 	                    // 猫の詳細の行間開ける
 	                    .adjust {
 	                             border-bottom:  1px solid rgba(0, 0, 0, 0.1) ;
 	                             margin-bottom: 70px;
 	                             padding-bottom: 10px;
+	                             
 	                             
 	                             
 	                    }
