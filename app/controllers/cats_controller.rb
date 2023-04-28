@@ -30,12 +30,8 @@ class CatsController < ApplicationController
    end 
   
   
-  private
-  
-  def user_params
-  params.require(:cat).permit( :img) 
-  end
-  
+
+
   
   
 
