@@ -10,6 +10,7 @@ require("channels")
 require('jquery')
 //= require popper
 //= require bootstrap-sprockets
+require('practice')
 import 'bootstrap'
 import '../src/application.scss'
 
