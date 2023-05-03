@@ -5,8 +5,10 @@
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
     <meta name="description" content="あなたのお好みの猫が探せます">
-    <%= stylesheet_link_tag 'application', media: 'all', data: { turbolinks: false } %>
-    <%= javascript_pack_tag 'application', data: { turbolinks: false } %>
+    <%= stylesheet_link_tag 'application', media: 'all', data: { turbolinks: true } %>
+    <%= javascript_pack_tag 'application', data: { turbolinks: true } %>
+
+    
   </head>
 
   <body>
@@ -17,5 +19,6 @@
     <%= yield %>
     <%= image_tag "background.jpg" %>
   </div>
+ 
   </body>
 </html>
