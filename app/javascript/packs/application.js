@@ -14,7 +14,7 @@ require('jquery')
 
 import 'bootstrap'
 import '../src/application.scss'
-import "./home"
+require('./home')
 
 
 // Uncomment to copy all static images under ../images to the output folder and reference
