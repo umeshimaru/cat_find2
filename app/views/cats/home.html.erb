@@ -3,7 +3,7 @@
      
      <div class="background">
        <div class="center-item">
-         <%= button_to "猫を探す", { controller: "cats", action: "search" }, { method: :get,class: "btn btn-primary", id: "button"}  %>
+         <%= button_to "猫を探す", { controller: "cats", action: "search" }, { method: :get,class: "btn btn-primary", id: "button", form: { id: "button-form" }}  %>
        </div>
        <%= image_tag "background.jpg" %>
        
@@ -11,7 +11,9 @@
       
       
 
-      
+      <button id="A">ボタンA</button>
+<button id="B">ボタンB</button>
+<button id="C">ボタンC</button>
      
     
     
