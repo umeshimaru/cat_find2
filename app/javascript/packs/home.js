@@ -33,8 +33,9 @@ const { start } = require("@rails/activestorage");
 
 
   $('.has-class').on('click',() => {
-     const p = $("section > p");
-     if(p.hasClass('sample')) {
+     let p = $("section > p").hasClass('sample');
+
+     if(p) {
        console.log("スタイルあり");
      }
      else {
@@ -42,6 +43,26 @@ const { start } = require("@rails/activestorage");
      }
   })
 
-  
+//  let secondP = $("section p:last-child").text();
+//  console.log(secondP);
+ let h1 = $("section > h1");
+ $(h1).text("難しい");
+ console.log(h1);
+
+ let n = 0;
+ $(".list ").on('click',() => {
+ n++;
+  $('ul').append('<li>リスト' + n + '</li>');
+
+ })
+ $(".remove ").on('click',() => {
+ n--;
+  $('li:last').remove();
+// 要素がなくなったら変数を0にする
+if(n < 0){
+  n = 0;
+}
+ })
+ console.log($('[name = gender]:checked').val());
 
 });
