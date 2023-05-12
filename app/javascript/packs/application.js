@@ -12,6 +12,7 @@ require('jquery')
 //= require bootstrap-sprockets 
 
 
+
 import 'bootstrap'
 import '../src/application.scss'
 require('./home')

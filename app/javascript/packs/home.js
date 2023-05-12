@@ -63,6 +63,16 @@ if(n < 0){
   n = 0;
 }
  })
- console.log($('[name = gender]:checked').val());
+ 
+
+//  ①クリックされたら以下の処理をする。②divをひっばりだしフェードアウト
+    $('#fadeOut').on("click",() => {
+      $(".box").fadeOut( 3000, () => {
+        alert('フェードアウト完了')
+      
+      });
+ 
+    });
+
 
 });
