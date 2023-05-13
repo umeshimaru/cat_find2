@@ -18,7 +18,12 @@ shain = Tanto.new
   puts "私の給料は#{shain.caluculate_salary(100)円です}"
   
 
+  shain = Torishimariyaku.new
+  shain.standup
+  puts "私の給料は#{shain.caluculate_salary(100)円です}"
+  
 
-end
+  
+end  
 
 
