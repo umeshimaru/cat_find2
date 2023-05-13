@@ -1,16 +1,11 @@
 require_relative 'shain'
 
-class Chief < Shain
+class Shunin < Shain
 
  def standup  
-   puts "チーフは素早く起立しました"
+   puts "主任が素早く立ちましました"
  end 
- 
- def kihon
- @kihonkyu * 2
- end 
- 
- def teate
- 1
- end 
+ def caluculate_salary(kihonkyu)
+  kihonkyu * 2 + 1
+ end
 end 

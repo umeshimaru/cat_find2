@@ -1,39 +1,12 @@
+class Shain 
+  def standu
+    puts '社員はとりあえず起立する'
+  end
 
-require_relative 'salary'
-class Shain
-
-include Salary
-
- def initialize(kihonkyu)
-  @kihonkyu = kihonkyu
- end 
- 
- def standup  
-   puts "社員はとりあえず起立する"
- end 
- 
+  def caluculate_salary(kihonkyu)
   
-end 
-
-
- # class Employee 
- #  include Salary
- # def initialize(kihonkyu)
- #  @kihonkyu = kihonkyu
- # end 
- 
- #  def my_salary 
- #   puts  @kihonkyu
- #  end 
-  
- # end 
- 
- # employee = Employee.new
- # puts employee.calculate_salary(1000)
- 
-
-
-
+  end
+end
 
 
 
