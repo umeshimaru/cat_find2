@@ -1,20 +1,16 @@
 require_relative 'shain'
 
 
-class Manager < Shain
+class Bucho < Shain
 
 
  def standup  
-   puts "部長はめんどくさそうに起立しました"
+    "部長はめんどくさそうに起立しました"
  end 
- 
-  def kihon  
-   @kihonkyu * 4 
-   end 
-   
-  def teate
-   2
-  end 
-end 
 
+ def kihon
+   @kihonkyu * 3
+  end
+  
 
+end
