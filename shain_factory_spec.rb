@@ -6,14 +6,15 @@ describe 'Refactoryed ShainFactory' do
   it 'Tantoオブジェクトを生成しているかどうかをチェックする' do 
     expect(shain_factory.create('Tanto',100)).to be_an_instance_of Tanto
   end 
-  it 'Chiefオブジェクトを生成しているかどうかをチェックする' do 
-    expect(shain_factory.create('Chief',100)).to be_an_instance_of Chief
+
+  it 'Shuninオブジェクトを生成しているかどうかをチェックする' do 
+    expect(shain_factory.create('Shunin',100)).to be_an_instance_of Shunin
   end 
+
   it 'Buchoオブジェクトを生成しているかどうかをチェックする' do 
-    expect(shain_factory.create('Manager',100)).to be_an_instance_of Manager
+    expect(shain_factory.create('Bucho',100)).to be_an_instance_of Bucho
   end 
-  it 'Ceoオブジェクトを生成しているかどうかをチェックする' do 
-    expect(shain_factory.create('Ceo',100)).to be_an_instance_of Ceo
+  it 'Torishimariyakuオブジェクトを生成しているかどうかをチェックする' do 
+    expect(shain_factory.create('Torishimariyaku',100)).to be_an_instance_of Torishimariyaku
   end 
-  
 end 
