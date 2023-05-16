@@ -1,7 +1,7 @@
 require_relative 'shain2'
 
-describe Shain2 do 
-  let(:shain) {Shain2.new}
+describe Shain do 
+  let(:shain) {Shain.new}
   
   it '社員はとりあえず起立します' do 
     expect(shain.work).to eq '社員はとりあえず起立する。'
