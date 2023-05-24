@@ -17,11 +17,13 @@ class CatsController < ApplicationController
   #結果表示 
   #選択肢の色と名前に該当する猫を検索する。
    def index
-   @cats = Cat.find_your_preference(params[:color],params[:name])
+   @cats = Cat.find_your_preference(cat_params)
+
     if @cats.empty?
     flash.now[:danger] = "該当する猫はいませんでした"
     render action: "search"
     end 
+    
    end 
   
    def show
@@ -29,7 +31,11 @@ class CatsController < ApplicationController
     
    end 
   
-  
+  private 
+
+  def cat_params
+      params.permit(:color, :name)
+  end
 
 
   
