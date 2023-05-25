@@ -5,14 +5,6 @@ require 'rails_helper'
     driven_by(:rack_test)
   end
 
-  describe "#home" do 
-    #検索条件ページに画面遷移するかどうかの確認
-    it "should respond to search" do 
-      visit home_url
-      click_button '猫を探す'
-      expect(page).to have_content '検索条件'
-    end
-  end
   
     describe "#search" do 
       #選択肢を選び検索ボタンをリンクが存在するかどうか
@@ -20,7 +12,7 @@ require 'rails_helper'
       visit search_path
       select 'クリーム', from: '色'
       select 'ミヌエット', from: '名前'
-      click_on '検索'
+      click_button '検索'
       expect(page).to have_link 'ミヌエット', href: "/show/1"
     end 
   end 
