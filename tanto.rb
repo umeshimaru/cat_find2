@@ -7,6 +7,9 @@ class Tanto < Shain
     "担当は慌てて起立しました"
  end 
  
+
+
+
 end 
 
 
