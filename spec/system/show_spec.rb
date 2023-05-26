@@ -3,9 +3,7 @@ require 'rails_helper'
 
 
 RSpec.describe "showページ", type: :system do
-before do
-  driven_by(:rack_test)
-end
+
 
 describe "#show" do 
   it "猫詳細というタイトルになっているか" do 

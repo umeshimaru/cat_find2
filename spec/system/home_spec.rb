@@ -2,9 +2,7 @@
 require 'rails_helper'
 
 RSpec.describe "ホームページ", type: :system do
-before do
-  driven_by(:rack_test)
-end
+
 describe "#home" do 
   it "タイトルが猫ちゃん|猫検索確認" do 
     visit home_url

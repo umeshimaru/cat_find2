@@ -1,9 +1,7 @@
 require 'rails_helper'
 
   RSpec.describe "検索ページ", type: :system do
-  before do
-    driven_by(:rack_test)
-  end
+ 
 
 
   describe "#search" do 
@@ -33,5 +31,18 @@ require 'rails_helper'
          expect(page).to have_content '該当する猫はいませんでした'
        end 
    end 
+
+   describe "#search", js: true do
+    it "3秒後にフラッシュが消えているかの確認" do 
+      visit search_path
+      select 'マンチカン', from: '名前'
+      select 'グレー', from: '色'
+      click_button '検索'
+      expect(page).to have_content '該当する猫はいませんでした'
+
+      
+    
+    end 
+   end
     
 end 
